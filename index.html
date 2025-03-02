@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: lightgray;
+        margin-bottom: 24px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- overlay -->
+    <div class="overlay hidden"></div>
+
+    <main>
+      <div class="container">
+       <h1>Desserts</h1>
+
+           <!-- 1st row -->
+            <div class="first">
+    <div class="card">
+      <div class="photo-button">
+        <div class="photo" id="waffle"><img src="assets/images/image-waffle-desktop.jpg" alt="waffle" class="mobile"></div>
+        <button class="btn">
+          <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="icon"/>Add to Cart
+        </button>
+        <button class="clicked hidden"><div class="cart-minus" alt="minus" ></div><span class="number">1</span><div class="cart-plus" alt="plus" ></div></button>
+
+      </div>
+      <div class="product-price">
+        <p class="title">Waffle</p>
+        <p class="product">Waffle with Berries</p>
+        <p class="price">6.50</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo-button">
+        <div class="photo" id="creme"><img src="assets/images/image-creme-brulee-desktop.jpg" alt="creme brulee" class="mobile"></div>
+        <button class="btn">
+          <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="icon"/>Add to Cart
+        </button>
+        <button class="clicked hidden"><div class="cart-minus" alt="minus" ></div><span class="number">1</span><div class="cart-plus" alt="plus" ></div></button>
+      </div>
+      <div class="product-price">
+        <p class="title">Crème Brûlée</p>
+        <p class="product">Vanilla Bean Crème Brûlée</p>
+        <p class="price">7.00</p>
+      </div>
+    </div>
+
+        <div class="card">
+      <div class="photo-button">
+        <div class="photo" id="macaron"><img src="assets/images/image-macaron-desktop.jpg" alt="macaron" class="mobile"></div>
+        <button class="btn">
+          <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="icon"/>Add to Cart
+        </button>
+        <button class="clicked hidden"><div class="cart-minus" alt="minus" ></div><span class="number">1</span><div class="cart-plus" alt="plus" ></div></button>
+      </div>
+      <div class="product-price">
+        <p class="title">Macaron</p>
+        <p class="product">Macaron Mix of Five</p>
+        <p class="price">8.00</p>
+      </div></div></div>
+
+        <!-- 2nd row -->
+         <div class="second">
+            <div class="card">
+      <div class="photo-button">
+        <div class="photo" id="tiramisu"><img src="assets/images/image-tiramisu-desktop.jpg" alt="tiramisu" class="mobile"></div>
+        <button class="btn">
+          <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="icon"/>Add to Cart
+        </button>
+        <button class="clicked hidden"><div class="cart-minus" alt="minus"></div><span class="number">1</span><div class="cart-plus" alt="plus"></div></button>
+      </div>
+      <div class="product-price">
+        <p class="title">Tiramisu</p>
+        <p class="product">Classic Tiramisu</p>
+        <p class="price">5.50</p>
+      </div>
+    </div>
+
+            <div class="card">
+      <div class="photo-button">
+        <div class="photo" id="baklava"><img src="assets/images/image-baklava-desktop.jpg" alt="baklava" class="mobile"></div>
+        <button class="btn">
+          <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="icon"/>Add to Cart
+        </button>
+        <button class="clicked hidden"><div class="cart-minus" alt="minus" ></div><span class="number">1</span><div class="cart-plus" alt="plus" ></div></button>
+      </div>
+      <div class="product-price">
+        <p class="title">Baklava</p>
+        <p class="product">Pistachio Baklava</p>
+        <p class="price">4.00</p>
+      </div>
+    </div>
+
+            <div class="card">
+      <div class="photo-button">
+        <div class="photo" id="lemon"><img src="assets/images/image-meringue-desktop.jpg" alt="lemon-pie" class="mobile"></div>
+        <button class="btn">
+          <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="icon"/>Add to Cart
+        </button>
+        <button class="clicked hidden"><div class="cart-minus" alt="minus" ></div><span class="number">1</span><div class="cart-plus" alt="plus"></div></button>
+      </div>
+      <div class="product-price">
+        <p class="title">Pie</p>
+        <p class="product">Lemon Meringue Pie</p>
+        <p class="price">5.00</p>
+      </div>
+    </div></div>
+
+    <!-- 3rd row -->
+
+    <div class="third">
+            <div class="card">
+      <div class="photo-button">
+        <div class="photo" id="cake"><img src="assets/images/image-cake-desktop.jpg" alt="red cake" class="mobile"></div>
+        <button class="btn">
+          <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="icon"/>Add to Cart
+        </button>
+        <button class="clicked hidden"><div class="cart-minus" alt="minus" ></div><span class="number">1</span><div class="cart-plus" alt="plus"></div></button>
+      </div>
+      <div class="product-price">
+        <p class="title">Cake</p>
+        <p class="product">Red Velvet Cake</p>
+        <p class="price">4.50</p>
+      </div>
+    </div>
+
+            <div class="card">
+      <div class="photo-button">
+        <div class="photo" id="brownie"><img src="assets/images/image-brownie-desktop.jpg" alt="brownie" class="mobile"></div>
+        <button class="btn">
+          <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="icon"/>Add to Cart
+        </button>
+        <button class="clicked hidden"><div class="cart-minus" alt="minus" ></div><span class="number">1</span><div class="cart-plus" alt="plus"></div></button>
+      </div>
+      <div class="product-price">
+        <p class="title">Brownie</p>
+        <p class="product">Salted Caramel Brownie</p>
+        <p class="price">5.50</p>
+      </div>
+    </div>
+
+            <div class="card">
+      <div class="photo-button">
+        <div class="photo" id="panna"><img src="assets/images/image-panna-cotta-desktop.jpg" alt="panna-cotta" class="mobile"></div>
+        <button class="btn">
+          <img src="assets/images/icon-add-to-cart.svg" alt="cart" class="icon"/>Add to Cart
+        </button>
+        <button class="clicked hidden"><div class="cart-minus" alt="minus" ></div><span class="number">1</span><div class="cart-plus" alt="plus" ></div></button>
+      </div>
+      <div class="product-price">
+        <p class="title">Panna Cotta</p>
+        <p class="product">Vanilla Panna Cotta</p>
+        <p class="price">6.50</p>
+      </div>
+    </div>
+  </div></div>
+
+  <section>
+
+    <!-- empty cart -->
+    <div class="empty">
+<h2>Your Cart (<span id="quantity">0</span>)</h2>
+<img src="assets/images/illustration-empty-cart.svg" alt="cake" id="empty-img">
+  <p class="cart">Your added items will appear here</p></div>
+
+  <!-- item added in the cart-->
+   <div class="added-cart hidden">
+<h2>Your Cart (<span id="quantity">0</span>)</h2>
+<div class="item-desc">
+</div>
+
+
+<div class="total-price">
+<p class="order-total">Order Total</p>
+<p class="grand-total"></p></div>
+
+<p class="carbon-neutral"><img src="assets/images/icon-carbon-neutral.svg" alt="tree" class="icon">This is a <span class="bold">carbon-neutral</span> delivery</p>
+
+<button class="confirm">Confirm Order</button>
+    </div></div>
+
+  <!-- popup -->
+
+  <div class="popup hidden">
+  <img src="assets/images/icon-order-confirmed.svg" alt="check" class="check-icon">
+<p class="confirmed">Order Confirmed</p>
+<p class="enjoy">We hope you enjoy your food!</p>
+
+ <div class="confirm-cart">
+
+  <div class="list">
+  <div class="img-item">
+  <img src="assets/images/image-tiramisu-thumbnail.jpg" alt="tiramisu" class="thumbnail">
+
+<div class="confirmed-item"><p class="item-name">Classic Tiramisu</p><p class="qty">1x <span class="at">@</span><span class="unit-price">5.50</span> </p></div></div>
+
+  <div class="confirmed-subtotal">5.50</div></div>
+
+
+<div class="total-price">
+<p class="confirmed-order-total">Order Total</p>
+<p class="grand-total">46.50</p></div></div>
+
+<button class="confirm-btn">Start New Order</button>
+</div>
+  </section>
+
+
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by KA.
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
